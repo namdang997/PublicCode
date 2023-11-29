@@ -5,6 +5,7 @@ import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 const About = () => {
   const location = useLocation();
   const [prevLocation, setPrevLocation] = useState("");
+  console.log("xxx");
   useEffect(() => {
     setPrevLocation(location.state.data);
   }, [location]);
